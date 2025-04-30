@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: rgb(237, 246, 253);
+}
+.fContent {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 37.5rem;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #3578ed, 0 0 10px #6db5fe, 0 0 10px #6ed3f2;
+}

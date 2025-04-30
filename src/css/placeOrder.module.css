@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #f6fafc, #fafeff);
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading */
+.heading {
+  font-size: 3rem;
+  color: #1d3a58;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeInSlide 1s ease;
+  text-shadow: 2px 2px 5px rgba(163, 217, 255, 0.5);
+}
+
+/* Form Container */
+.container {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(207, 234, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(115, 189, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInSlide 1s ease;
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Label */
+.label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2a4d6e;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input */
+input.form-control {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #cceaff;
+  background-color: #f5fbff;
+  color: #1e3e5e;
+  margin-bottom: 1.3rem;
+  box-shadow: inset 1px 1px 4px rgba(186, 224, 255, 0.6);
+  transition: 0.3s ease;
+}
+
+input.form-control:focus {
+  border: 1px solid #6cbcf9;
+  box-shadow: 0 0 10px rgba(108, 188, 249, 0.3);
+  outline: none;
+}
+
+/* Checkbox Group */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: #1d3a58;
+  margin-bottom: 1.5rem;
+}
+
+.checkInput {
+  width: 18px;
+  height: 18px;
+  accent-color: #73c6fd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.checkInput:hover {
+  transform: scale(1.1);
+}
+
+.cContent {
+  font-size: 1rem;
+  color: #295779;
+}
+
+/* Button */
+.button {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  width: 90%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  color: #1e1e1e;
+  font-weight: 600;
+  box-shadow: 0 2px 2px rgba(40, 145, 202, 0.6);
+  transition: all 0.3s ease;
+  background-color: rgb(151, 207, 247);
+  border: #73b6f4 2px solid;
+}
+.button:hover {
+  border: #73b6f4 3px solid;
+  background-color: rgb(229, 242, 249);
+  color: rgb(34, 34, 34);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}

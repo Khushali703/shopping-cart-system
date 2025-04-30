@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+}
+.itemsContainer {
+  padding-top: 2rem;
+  margin: 50px 10%;
+  width: 80%;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  border: #a7d2fd 2px solid;
+  background-color: #f6f9fc;
+  box-shadow: 0 8px 15px rgba(174, 233, 255, 0.9);
+  transition: all 0.5s ease;
+  transition: transform 0.4s ease;
+}
+.itemsContainer:hover {
+  transform: scale(1.02);
+}
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  margin-left: 2rem;
+  transition: transform 0.4s ease;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+.image:hover {
+  transform: scale(1.05);
+}
+.info {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.info .brand {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .memory {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .size {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .rating {
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+.info .rating:hover {
+  transform: scale(1.09);
+}
+.info .rating .stars {
+  color: #f8c74d;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+.info .name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e1e20;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  transition: transform 0.2s ease;
+}
+.info .name:hover {
+  transform: scale(1.09);
+}
+.info .name:hover {
+  color: #53a7ce;
+}
+.info .prize .price {
+  margin-top: 2rem;
+  font-size: 1.9rem;
+  color: #282c3f;
+  font-weight: 600;
+  margin-left: 0.2rem;
+  transition: transform 0.5s ease;
+}
+.info .prize .price:hover {
+  transform: scale(0.5);
+}
+.info .prize .price:hover {
+  color: #378c63;
+}
+.info .discount {
+  color: #378c63;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.button {
+  margin-top: 8px;
+  font-size: 18px;
+  width: 80%;
+  background-color: rgb(151, 207, 247);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 2rem;
+  border: #73b6f4 2px solid;
+}
+.button:hover {
+  border: #73b6f4 3px solid;
+  background-color: rgb(229, 242, 249);
+  color: rgb(34, 34, 34);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}

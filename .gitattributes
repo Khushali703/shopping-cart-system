@@ -1,0 +1,25 @@
+# Auto-detect text files and normalize line endings to LF in the repo
+* text=auto
+
+# Explicitly declare line endings for common text file types
+*.js     text
+*.jsx    text
+*.ts     text
+*.tsx    text
+*.html   text
+*.css    text
+*.json   text
+*.md     text
+*.yml    text
+*.yaml   text
+*.env    text
+*.gitignore text
+*.gitattributes text
+
+# Keep binary files untouched
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary

@@ -1,0 +1,218 @@
+/*cart.jsx*/
+.cartPage {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cartItemsContainer,
+.cartSummary {
+  animation: fadeSlideIn 0.6s ease forwards;
+}
+.cartItemsContainer {
+  flex: 2; /* Takes up 3/4 of the space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeSlideIn 0.9s ease forwards;
+}
+.cartSummary {
+  flex: 1; /* Takes up 1/4 of the space */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 70%;
+  margin-right: 5rem;
+  margin-top: 5rem;
+  box-shadow: 0 8px 15px rgba(155, 166, 170, 0.9);
+  transition: transform 0.4s ease;
+}
+.cartSummary:hover {
+  transform: translateY(-5px);
+}
+
+/*cartItems.jsx*/
+.itemsContainer {
+  padding-top: 2rem;
+  width: 50%;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  border: #a7d2fd 2px solid;
+  background-color: #f6f9fc;
+
+  box-shadow: 0 8px 20px rgba(143, 202, 255, 0.5);
+  margin-left: 15rem;
+  transition: transform 0.3s ease;
+}
+.itemsContainer:hover {
+  transform: translateY(-5px);
+}
+.close {
+  font-size: 2rem;
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  margin-left: 5rem;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+.info {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.info .brand {
+  margin-top: 0.5rem;
+  font-size: 15px;
+
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .memory {
+  margin-top: 2rem;
+  font-size: 15px;
+
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .size {
+  margin-top: 0.5rem;
+  font-size: 15px;
+
+  color: #282c3f;
+  white-space: nowrap;
+}
+.info .rating {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.info .name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e1e20;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.info .prize .price {
+  margin-top: 2rem;
+  font-size: 1.9rem;
+  color: #282c3f;
+}
+.info .discount {
+  color: #2e8c58;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.msg {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #282c3f;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #94cbff 2px 2px 2px;
+  align-self: center;
+  margin-top: 4em;
+}
+
+/*cartSummary*/
+.cartContainer {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #f6f9fc;
+}
+.priceHeader {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #282c3f;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px #a5cefa;
+}
+.priceItem {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #2d2d2d;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 0.5rem;
+}
+.priceItemTag {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #282c3f;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.priceItemValue {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #282c3f;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  cursor: pointer;
+
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  width: 90%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  color: #1e1e1e;
+  font-weight: 600;
+  box-shadow: 0 2px 2px rgba(40, 145, 202, 0.6);
+  transition: all 0.3s ease;
+  background-color: rgb(151, 207, 247);
+  border: #73b6f4 2px solid;
+}
+.button:hover {
+  border: #73b6f4 3px solid;
+  background-color: rgb(229, 242, 249);
+  color: rgb(34, 34, 34);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}

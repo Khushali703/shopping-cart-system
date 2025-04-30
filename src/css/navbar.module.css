@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: rgb(237, 246, 253);
+}
+.web_name {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 3rem;
+  font-weight: 900;
+  text-shadow: 0 0 2px #3578ed, 0 0 5px #6db5fe, 0 0 5px #6ed3f2;
+  text-decoration: none;
+}
+.text {
+  text-decoration: none;
+  color: inherit;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  text-shadow: 0 0 2px #3578ed, 0 0 2px #6db5fe, 0 0 2px #6ed3f2;
+  cursor: pointer;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  text-shadow: 0 0 2px #3578ed, 0 0 2px #6db5fe, 0 0 2px #6ed3f2;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.badge {
+  font-size: 15px;
+}
+.action_bar {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-evenly;
+}
