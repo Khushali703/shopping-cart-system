@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import Items from "../components/Items";
-import Cart from "../components/cart";
+import Cart from "./cart";
 import PlaceOrder from "../components/placeOrder";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            elements={
+            element={
               <>
                 <Navbar />
                 <Items />
@@ -24,7 +24,7 @@ const App = () => {
           />
           <Route
             path="/home"
-            elements={
+            element={
               <>
                 <Navbar />
                 <Items />
@@ -34,7 +34,7 @@ const App = () => {
           />
           <Route
             path="/cart"
-            elements={
+            element={
               <>
                 <Navbar />
                 <Cart />
@@ -44,7 +44,7 @@ const App = () => {
           />
           <Route
             path="/placeOrder"
-            elements={
+            element={
               <>
                 <Navbar />
                 <PlaceOrder />

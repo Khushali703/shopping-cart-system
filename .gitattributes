@@ -1,25 +1,25 @@
-# Auto-detect text files and normalize line endings to LF in the repo
+
+# Handle all files with automatic line ending normalization
 * text=auto
 
-# Explicitly declare line endings for common text file types
-*.js     text
-*.jsx    text
-*.ts     text
-*.tsx    text
-*.html   text
-*.css    text
-*.json   text
-*.md     text
-*.yml    text
-*.yaml   text
-*.env    text
-*.gitignore text
-*.gitattributes text
+# Optional: force LF endings for specific file types (cross-platform friendly)
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
 
-# Keep binary files untouched
-*.png   binary
-*.jpg   binary
-*.jpeg  binary
-*.gif   binary
-*.ico   binary
-*.pdf   binary
+# Optional: binary files (do not modify line endings)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.svg binary
+*.eot binary
